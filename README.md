@@ -31,10 +31,10 @@ The implementaiton performace is tested for both 'tall' (more rows) and 'fat' (m
 
 ![here](results_workstation.svg)
 
-Results generated on a 18-core 128gb workstation. Execution times should be seen as relative, as each test is run 50 times. Error bars are due to varying shapes of matrices (tall, fat, square, but all with same number of elements ($\text{rows} × \text{columns}$).
+Results generated on a 18-core 128gb workstation. Execution times should be seen as relative, as each test is run 50 times. Error bars are due to varying shapes of matrices (tall, fat, square, but all with same number of elements (rows × columns).
 
 Clearly, the MKL implementation should not always be favoured over SciPy's native one. The high overhead of the MKL implementation (mainly acquiring pointers and extra memory) does mean that for small problems, SciPy's implementation is more efficient. For any high dimension, MKL should be favourable.
 
-It should be noted that the tests performed in this repo are limited in size due to the random sparse matrix generator for SciPy, which ran out of memory on a 128gb system for a matrix size of $10^8$ total elements.
+It should be noted that the tests performed in this repo are limited in size due to the random sparse matrix generator for SciPy, which ran out of memory on a 128gb system for a matrix size of 10⁸ total elements.
 
 The test results can be recreated using specifically `pytest`, `pytest-harvester` and all the other imported libraries at the top of the `test_sparse.py` file.
