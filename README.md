@@ -23,7 +23,7 @@ Now simply put the `mkl_interface.py` file in the directory where you will run y
 from mkl_interface import sparse_gemv
 ```
 
-and use the function `sparse_gemv(scipy.sparse.csr_matrix A, numpy.ndarray x)` form anywhere. Be mindful that the precision of `A` is used to perform the matrix-vector product, i.e. x is implicitly converted (its type will probably be altered outside the function scope too).
+and use the function `sparse_gemv(scipy.sparse.csr_matrix A, numpy.ndarray x)` from anywhere. Be mindful that the precision of `A` is used to perform the matrix-vector product, i.e. x is implicitly converted (its type will probably be altered outside the function scope too).
 
 ## Benchmark results
 
