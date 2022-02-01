@@ -37,4 +37,4 @@ Clearly, the MKL implementation should not always be favoured over SciPy's nativ
 
 It should be noted that the tests performed in this repo are limited in size due to the random sparse matrix generator for SciPy, which ran out of memory on a 128gb system for a matrix size of 10⁸ total elements.
 
-The test results can be recreated using specifically `pytest`, `pytest-harvester` and all the other imported libraries at the top of the `test_sparse.py` file.
+The test results can be recreated using specifically `pytest`, `pytest-harvester` and all the other imported libraries at the top of the `test_sparse_multiplication.py` file.
